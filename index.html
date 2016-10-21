@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>平淡就是幸福</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style>
+			*{padding: 0;margin: 0;}
+			img{border: 0;display: block;}
+			html,body{width: 100%;height: 100%; }
+			.swiper-container,.swiper-wrapper,.swiper-slide{
+				width: 100%;height: 100%;
+			}
+			.swiper-slide{width: 100%;height: 100%;background: url(img/1.png) no-repeat;background-size:100% 100%;}
+			
+			.swiper-slide1{background:#fff;position: relative;}
+			.swiper-slide11{width: 100%;height: 100%;background: url(img/1.png) no-repeat;background-size:100% 100%;position: absolute;}
+			.swiper-slide12{width:27%;height: 60%;margin-top:10%;margin-left: 70%;position: absolute;overflow: hidden;}
+			.swiper-slide1 .img1{position: absolute;left:70%;top: 6%;width:27%;height: 60%;opacity: 0.5;filter: alpha(opacity=50);}
+			.swiper-slide1 .swiper-slide12 .img2{position: absolute;left:40%;top:30%;width:26%;height:60%;}
+			.swiper-slide1 .swiper-slide13{position: absolute;left:70%;top: 6%;width:27%;height: 60%;}
+			.swiper-slide1 .swiper-slide13 .img3{position: absolute;width:100%;height:100%;}
+			.swiper-slide1 .swiper-slide14{position: absolute;left:10%;bottom: 10%;width:80%;height: 3%;}
+			.swiper-slide1 .swiper-slide14 .img4{position: absolute;width:100%;height:100%;}
+			
+			
+			.swiper-slide2{position: relative;}
+			.swiper-slide2 .swiper-slide21{position: absolute;left:3%;top: 2%;width:93%;height: 95%;}
+			.swiper-slide2 .swiper-slide21 .img8{position: absolute;width:100%;height:100%;opacity: 0.6;filter: alpha(opacity=60);}
+			.swiper-slide2 .swiper-slide22{position: absolute;left:63%;top: 23%;width:23%;height: 8%;}
+			.swiper-slide2 .swiper-slide22 .img5{position: absolute;width:100%;height:100%;}
+			.swiper-slide2 .swiper-slide23{position: absolute;left:51%;top: 34%;width:36%;height:15%;}
+			.swiper-slide2 .swiper-slide23 .img6{position: absolute;width:100%;height:100%;}
+			.swiper-slide2 .swiper-slide24{position: absolute;left:7%;top: 62%;width:31%;height:38%;}
+			.swiper-slide2 .swiper-slide24 .img7{position: absolute;width:100%;height:100%;}
+			
+			.swiper-slide3{position: relative;}
+			.swiper-slide3 .swiper-slide31{position: absolute;left:3%;top: 2%;width:93%;height: 95%;}
+			.swiper-slide3 .swiper-slide31 .img9{position: absolute;width:100%;height:100%;opacity: 0.6;filter: alpha(opacity=60);}
+			.swiper-slide3 .swiper-slide32{position: absolute;left:47%;top: 7%;width:4%;height: 61%;}
+			.swiper-slide3 .swiper-slide32 .img10{position: absolute;width:100%;height:100%;}
+			.swiper-slide3 .swiper-slide33{position: absolute;left:40%;top: 56%;width:21%;height: 9%;}
+			.swiper-slide3 .swiper-slide33 .img11{position: absolute;width:100%;height:100%;}
+			.swiper-slide3 .swiper-slide34{position: absolute;left:17%;top:70%;width:64%;height: 29%;}
+			.swiper-slide3 .swiper-slide34 .img12{position: absolute;width:100%;height:100%;}
+			
+			.swiper-slide4{position: relative;}
+			.swiper-slide4 .swiper-slide41{position: absolute;left:3%;top: 2%;width:93%;height: 95%;}
+			.swiper-slide4 .swiper-slide41 .img9{position: absolute;width:100%;height:100%;opacity: 0.6;filter: alpha(opacity=60);}
+			.swiper-slide4 .swiper-slide42{position: absolute;left:11%;top: 28%;width:77%;height: 33%;}
+			.swiper-slide4 .swiper-slide42 .img13{position: absolute;width:100%;height:100%;}
+			.swiper-slide4 .swiper-slide43{position: absolute;left:14%;top: 66%;width:72%;height: 2%;}
+			.swiper-slide4 .swiper-slide43 .img14{position: absolute;width:100%;height:100%;}
+			.swiper-slide4 .swiper-slide44{position: absolute;left:37%;top:84%;width:23%;height: 8%;}
+			.swiper-slide4 .swiper-slide44 .img15{position: absolute;width:100%;height:100%;}
+			
+			.swiper-slide5{position: relative;}
+			.swiper-slide5 .swiper-slide51{position: absolute;left:3%;top: 2%;width:93%;height: 95%;}
+			.swiper-slide5 .swiper-slide51 .img9{position: absolute;width:100%;height:100%;opacity: 0.6;filter: alpha(opacity=60);}
+			.swiper-slide5 .swiper-slide52{position: absolute;left:58%;top: 26%;width:21%;height: 8%;}
+			.swiper-slide5 .swiper-slide52 .img16{position: absolute;width:100%;height:100%;}
+			.swiper-slide5 .swiper-slide53{position: absolute;left:20%;top:11%;width:65%;height: 21%;}
+			.swiper-slide5 .swiper-slide53 .img17{position: absolute;width:100%;height:100%;}
+			.swiper-slide5 .swiper-slide54{position: absolute;left:33%;top:41%;width:56%;height: 23%;}
+			.swiper-slide5 .swiper-slide54 .img18{position: absolute;width:100%;height:100%;}
+			
+			.swiper-slide6{position: relative;background: url(img/23.png) no-repeat;}
+			.swiper-slide6 .swiper-slide61{position: absolute;left:1%;top: 1%;width:96%;height: 97%;}
+			.swiper-slide6 .swiper-slide61 .img19{position: absolute;width:100%;height:100%;opacity: 0.6;filter: alpha(opacity=60);}
+			.swiper-slide6 .swiper-slide62{position: absolute;left:67%;top: 0%;width:34%;height: 17%;}
+			.swiper-slide6 .swiper-slide62 .img20{position: absolute;width:100%;height:100%;}
+			.swiper-slide6 .swiper-slide63{position: absolute;left:45%;top:34%;width:9%;height: 13%;}
+			.swiper-slide6 .swiper-slide63 .img21{position: absolute;width:100%;height:100%;}
+			.swiper-slide6 .swiper-slide64{position: absolute;left:-2%;top:30%;width:50%;height: 31%;}
+			.swiper-slide6 .swiper-slide64 .img22{position: absolute;width:100%;height:100%;}
+			.swiper-slide6 .swiper-slide65{position: absolute;left:28%;top:56%;width:43%;height:6%;}
+			.swiper-slide6 .swiper-slide65 .img23{position: absolute;width:100%;height:100%;}
+			.swiper-slide6 .swiper-slide66{position: absolute;left:20%;top:51%;width:60%;height:3%;}
+			.swiper-slide6 .swiper-slide66 .img24{position: absolute;width:100%;height:100%;}
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		    	
+		        <div class="swiper-slide swiper-slide1">
+		        <!----------Slide 1------------------------>
+		        	<div class="ani swiper-slide11" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s"></div><!--整体背景-->
+		        	<img class="img1" src="img/80974c08-b925-4619-a296-84bc6e91aeb4-2845.png" /><!--白色背景框-->
+		        	<div class="ani swiper-slide12" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.1s"><!--文字-->
+		        		<img class="img2" src="img/3.png" />
+		        	</div>
+		        	<div class="ani swiper-slide13" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s"><!--飞入边框-->
+		        		<img class="img3" src="img/2.png"/>
+		        	</div>
+		        	<div class="ani swiper-slide14" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s"><!--底边文字-->
+		        		<img class="img4" src="img/4.png" />
+		        	</div>
+		        </div>
+		        
+		        
+		        <div class="swiper-slide swiper-slide2">
+		        <!----------Slide 2------------------------>
+		        <div class="ani swiper-slide21" swiper-animate-effect="fadeIn" swiper-animate-duration="0.3s" swiper-animate-delay="0.3s"><!--白色背景-->
+		        	<img class="img8" src="img/8.png"/>
+		        </div>
+		        <div class="ani swiper-slide22" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s"><!--文字‘现实’-->
+		        	<img class="img5" src="img/6.png"/>
+		        </div>
+		        <div class="ani swiper-slide23" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.8s"><!--文字段-->
+		        	<img class="img6" src="img/7.png"/>
+		        </div>
+		        <div class="ani swiper-slide24" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="1s" swiper-animate-delay="1.2s"><!--底边图片-->
+		        	<img class="img7" src="img/5.png"/>
+		        </div>
+		        </div>
+	
+		        <div class="swiper-slide swiper-slide3">
+		        <!----------Slide 3------------------------>
+			        <div class="ani swiper-slide31" swiper-animate-effect="fadeIn" swiper-animate-duration="0.3s" swiper-animate-delay="0.3s"><!--白色背景-->
+			        	<img class="img9" src="img/8.png"/>
+			        </div>
+		         	<div class="ani swiper-slide32" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s"><!--文字-->
+		         		<img class="img10" src="img/10.png" />
+		         	</div>
+		         	<div class="ani swiper-slide33" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s"><!--文字‘自己’-->
+		         		<img class="img11" src="img/9.png"/>
+		         	</div>
+		         	<div class="ani swiper-slide34" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s"><!--花-->
+		         		<img class="img12" src="img/11.png"/>
+		         	</div>
+		        </div>
+		        
+		        <div class="swiper-slide swiper-slide4">
+		        <!----------Slide 4------------------------>
+			        <div class="ani swiper-slide41" swiper-animate-effect="fadeIn" swiper-animate-duration="0.3s" swiper-animate-delay="0.3s"><!--白色背景-->
+			        	<img class="img9" src="img/8.png"/>
+			        </div>
+		         	<div class="ani swiper-slide42" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s"><!--小狗-->
+		         		<img class="img13" src="img/12.png" />
+		         	</div>
+		         	<div class="ani swiper-slide43" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s"><!--文字-->
+		         		<img class="img14" src="img/13.png"/>
+		         	</div>
+		         	<div class="ani swiper-slide44" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.2s"><!--文字'美好'-->
+		         		<img class="img15" src="img/14.png"/>
+		         	</div>
+		        </div>
+		        
+		        <div class="swiper-slide swiper-slide5">
+		        <!----------Slide 5------------------------>
+			        <div class="ani swiper-slide51" swiper-animate-effect="fadeIn" swiper-animate-duration="0.3s" swiper-animate-delay="0.3s"><!--白色背景-->
+			        	<img class="img9" src="img/8.png"/>
+			        </div>
+		         	<div class="ani swiper-slide52" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s"><!--文字'人生'-->
+		         		<img class="img16" src="img/15.png" />
+		         	</div>
+		         	<div class="ani swiper-slide53" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s"><!--文字-->
+		         		<img class="img17" src="img/17.png"/>
+		         	</div>
+		         	<div class="ani swiper-slide54" swiper-animate-effect="slideUp" swiper-animate-duration="1s" swiper-animate-delay="1.2s"><!--花-->
+		         		<img class="img18" src="img/16.png"/>
+		         	</div>
+		        </div>
+		        
+		        <div class="swiper-slide swiper-slide6">
+		        <!----------Slide 6------------------------>
+			        <div class="ani swiper-slide61" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s"><!--边框-->
+			        	<img class="img19" src="img/18.png"/>
+			        </div>
+		         	<div class="ani swiper-slide62" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s"><!--花-->
+		         		<img class="img20" src="img/21.png" />
+		         	</div>
+		         	<div class="ani swiper-slide63" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s"><!--文字'幸福'-->
+		         		<img class="img21" src="img/20.png"/>
+		         	</div>
+		         	<div class="ani swiper-slide64" swiper-animate-effect="slideUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"><!--蝴蝶-->
+		         		<img class="img22" src="img/22.png"/>
+		         	</div>
+		         	<div class="ani swiper-slide65" swiper-animate-effect="slideUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"><!--happiness-->
+		         		<img class="img23" src="img/24.png"/>
+		         	</div>
+		         	<div class="ani swiper-slide66" swiper-animate-effect="slideUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"><!--文字-->
+		         		<img class="img24" src="img/19.png"/>
+		         	</div>
+		        </div>
+		        
+		        
+		        
+		    </div>
+		</div>
+		<script src="js/swiper.animate1.0.2.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script>
+			var mySwiper = new Swiper ('.swiper-container', {
+			    direction: 'vertical',
+			    onInit: function(swiper){
+				    swiperAnimateCache(swiper); 
+				    swiperAnimate(swiper);
+			  	}, 
+			 	onSlideChangeEnd: function(swiper){ 
+			    	swiperAnimate(swiper); 
+			 	} 
+			});    
+		</script>
+	</body>
+</html>
